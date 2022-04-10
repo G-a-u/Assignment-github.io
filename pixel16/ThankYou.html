@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Thank You::Pixel6</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	</head>
+
+	<body>
+		<div id="pDetails" class="ValidationForm">
+			<h1>Thank You..!</h1>
+			<p>Dear <strong id="userFname"></strong>, </p>
+			<p>Thank you for your inquiry. A 4 digit verification number has been sent to your phone number: <strong id="number"></strong> please enter in the following box and submit for confirmation:</p>
+			<form onsubmit="vCodeValidation();return false">
+				<div class="form">
+					<label>Enter verification code: </label>
+					<input type="text" name="vCode" id="vCode" maxlength="4" value="" onKeyup="validateNums(this.value)"></input>
+					<p class="incorectCode" style="display:none; color:red">Enter correct verification code</p>
+				</div>
+				<div class="form">
+					<input type="submit" id="Validate" value="Validate" disabled/>
+				</div>
+			</form>
+		</div>	
+		<div class="validationSuccess" style="display:none;">
+			<h1 style="text-align:center; font-size:24px">Validation Successful!</h1>
+			<a href="./index.html" style="text-align:center;"> Click here and go to Home Page </a>
+		</div>
+	</body>
+		 <script type = "text/javascript" src ="js/script.js"></script>
+</html>
+
+
+
+
+

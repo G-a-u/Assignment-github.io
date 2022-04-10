@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Personal Details Page::Pixel6</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	</head>
+
+	<body>
+		<div id="pDetails">
+			<h2>Personal Details Page</h2>
+			<form onsubmit="submitData(event);return false">
+				<div class="form">
+					<label>Full Name:</label>
+					<input type="text" name="fname" id="fname" value="" onBlur="nameValidation(this.value)"></input>
+				</div>
+				<div class="form">
+					<label>Email:</label>
+					<input type="text" name="email" value="" id="email" onBlur="emailValidation(this.value)"></input>
+				</div>
+				<div class="form">
+					<label>Phone Number:</label>
+					<input type="text" id="operatorState" disabled></input>
+					<input type="text" name="phone" value="" id="phone" maxlength="10" onBlur="formatPhoneNumber(this.value)"></input>
+				</div>
+				<div class="form">
+					<input type="submit" id="submit" value="submit" disabled/>
+				</div>
+			</form>
+		</div>	
+	</body>
+		 <script type = "text/javascript" src ="js/script.js"></script>
+</html>
+
+
+
+
+
